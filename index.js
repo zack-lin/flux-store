@@ -23,7 +23,7 @@ var DS = function (opt) {
     }
   });
   //定义对应cache
-  if(opt.cache && opt.cache instanceof Object) {
+  if(opt.cache instanceof Object) {
     stores[opt.name].cache = CP({
       id: opt.cache.id,
       methods: opt.cache.methods
