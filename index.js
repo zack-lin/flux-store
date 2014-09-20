@@ -11,9 +11,6 @@ var DS = function (opt) {
     console.log('new store name should be offer and be string!');
     return;
   }
-  if (stores[opt.name]) {
-    console.log('new store name has existed!');
-  }
   //定义store
   stores[opt.name] = {};
   //扩展store方法
@@ -33,4 +30,9 @@ var DS = function (opt) {
   return stores[opt.name];
 };
 
-module.exports = DS;
+module.exports = function (opt) {
+  if (!stores[opt.name]) {
+    new DS(opt);
+  }
+  return stores[opt.name]
+};
