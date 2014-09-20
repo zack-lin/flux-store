@@ -1,0 +1,22 @@
+{
+  "name": "flux-store",
+  "repo": "zack-lin/flux-store",
+  "description": "flux store",
+  "version": "1.0.0",
+  "keywords": [
+    "SPA",
+    "data",
+    "store"
+  ],
+  "scripts": [
+    "index.js"
+  ],
+  "dependencies": {
+    "scrat-team/extend": "0.1.0",
+    "scrat-team/event": "0.1.0"
+  },
+  "remotes": [
+    "http://github.com"
+  ],
+  "license": "MIT"
+}
